@@ -120,6 +120,7 @@ body {
   font-style: italic;
   position: relative;
   font-size: 23px;
+  margin-left: 10px;
 }
 .navbar .navbar-brand .lastname {
   color: #626475;
