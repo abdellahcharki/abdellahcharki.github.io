@@ -143,26 +143,69 @@ body {
 .header {
   text-align: center;
 }
-.header .myphoto {
-  border: 3px solid #ffc83d;
-  border-radius: 15px;
-  transform: rotate(357deg);
-  box-shadow: 10px 10px 0px 5px #131935;
+.header .myimg {
+  position: relative;
 }
-.header .my-name {
+.header .myimg::after {
+  position: absolute;
+  z-index: -1;
+  width: 94%;
+  height: calc(100% - 130px);
+  content: "";
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  background: linear-gradient(145deg, #656674, #363746);
+  box-shadow: 10px 10px 19px rgba(162, 171, 189, 0.3098039216), -10px -10px 19px rgba(255, 255, 255, 0.1215686275);
+  border-radius: 13px;
+}
+.header .about-wrapper {
+  padding-top: 93px;
+}
+.header .about-wrapper p.iam {
+  text-align: start;
+  font-family: "Poppins";
+  margin: 0;
+  font-size: 26px;
+  font-weight: 200;
+  color: #cfb0b0;
+  margin-bottom: 10px;
+}
+.header .about-wrapper .my-name {
   font-weight: 900;
   font-size: 54px;
   color: #ffb324 !important;
   text-align: center;
   font-family: "Poppins";
+  font-size: 94px;
+  line-height: 80%;
 }
-.header .my-name span {
+.header .about-wrapper .my-name.lastname {
+  text-align: end;
+  text-shadow: -1px -1px 0 #ffb324, 1px -1px 0 #ffb324, -1px 1px 0 #ffb324, 1px 1px 0 #ffb324;
+  color: #525367 !important;
+}
+.header .about-wrapper .my-name.lastname::first-letter {
+  color: #ffb324;
+  text-shadow: none;
+}
+.header .about-wrapper .my-name.firstname {
+  text-align: start;
+}
+.header .about-wrapper .my-name.firstname .wborder {
+  display: inline;
+  font-size: inherit;
+  font-weight: inherit;
+  color: #525367 !important;
+  text-shadow: -1px -1px 0 #ffb324, 1px -1px 0 #ffb324, -1px 1px 0 #ffb324, 1px 1px 0 #ffb324;
+}
+.header .about-wrapper .my-name span {
   font-weight: 200;
   font-size: 28px;
   display: block;
-  color: #ddd;
+  color: #a79292;
 }
-.header .nav-link {
+.header .about-wrapper .nav-link {
   background: #515972;
   padding: 5px 20px;
   box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.14);
@@ -173,7 +216,7 @@ body {
   transition: all 0.5s;
   line-height: 30px;
 }
-.header .nav-link:hover {
+.header .about-wrapper .nav-link:hover {
   background: #ffb324;
   box-shadow: none;
   color: #000;
@@ -509,26 +552,18 @@ section .contact-btn:hover {
 }
 
 #Skills .mycard-item {
-  position: relative;
+  background: #1f2133;
+  padding-top: 33px;
+  border: 1px solid #9d9191;
+  border-top-right-radius: 41px;
+  border-bottom-left-radius: 41px;
+  font-family: "Poppins";
+  font-weight: 200;
 }
 #Skills .mycard-title {
-  position: absolute;
   background: rgba(118, 119, 127, 0);
-  border-radius: 21px;
-  border: 2px solid #fff;
-  padding: 5px 28px;
   font-size: 19px;
-  top: -35PX;
-  left: 0px;
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0;
-  border-bottom: 0;
-  line-height: 26px;
-}
-#Skills .mycard-body {
-  background: rgba(0, 0, 0, 0.3490196078);
-  border: 3px solid #ffffff;
-  padding: 29px;
+  margin-bottom: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */

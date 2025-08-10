@@ -72,26 +72,23 @@
 
 #Skills{
     .mycard-item{
-        position: relative;
-    }
-    .mycard-title{
-position: absolute;
-    background: rgba(118, 119, 127, 0);
-    border-radius: 21px;
-    border: 2px solid #fff;
-    padding: 5px 28px;
-    font-size: 19px;
-    top: -35PX;
-    left: 0px;
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
-    border-bottom: 0;
-    line-height: 26px;
+           background: #1f2133;
+    padding-top: 33px;
+    border: 1px solid #9d9191;
+    border-top-right-radius: 41px;
+    border-bottom-left-radius: 41px;
     
+            font-family: 'Poppins';
+            font-weight: 200;
+    }
+    .mycard-title{ 
+    background: rgba(118, 119, 127, 0);
+    font-size: 19px;
+    margin-bottom: 20px;
     }
     .mycard-body{
-            background: #00000059;
-    border: 3px solid #ffffff;
-    padding: 29px;
+       
+ 
+    
     }
 }
