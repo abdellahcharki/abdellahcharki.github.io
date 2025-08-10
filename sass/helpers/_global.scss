@@ -1,0 +1,96 @@
+// $scolor: #9f8c87;
+$scolor:#a3a3a3;
+$orang : #ffb324;
+$bg_color: #302f31;
+
+$title_font: "Rubik", sans-serif;
+$font_mont:"Montserrat", sans-serif;
+$font_text: 'Poppins';
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    width: 10px;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+    background: $scolor;
+    border-radius: 10px;
+}
+body {
+    background-image:
+        radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+        radial-gradient(circle at 0 0, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+        radial-gradient(circle at 0 100%, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+        radial-gradient(circle at 100% 0, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+        radial-gradient(circle at 100% 100%, rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+        linear-gradient(to top, #1e1f3a, #2b2e4a, #3d3e57, #4f5065, #626475);
+    background-size: 48px 48px, 48px 48px, 48px 48px, 48px 48px, 48px 48px, 100% 100%;
+    background-repeat: repeat;
+    background-position: center;
+    font-family: "Inconsolata", monospace;
+    min-height: 100vh;
+    overflow: hidden;
+    padding-top: 70px;
+    font-size: 1rem;
+    color: #f1f1f1;
+}
+.form-control{
+    background-color: transparent;
+    padding: 7px 20px;
+    color: #ddd;
+    border: none;
+    border-bottom: 1px solid;
+    border-radius: 0;
+    color: #fff;
+    &:focus{
+        background-color: transparent;
+        color: #fff;
+        outline: none;
+        box-shadow:none;
+    }
+}
+
+.btn , input {
+    outline: none !important;
+    box-shadow: none !important;
+}
+*{
+    outline: none !important;
+}
+ 
+ 
+
+.text-orange{
+    color: $orang !important;
+}
+
+
+.copyright{
+    color: #ddd;
+    text-align: center;
+    border-top: 1px dashed #ddd;
+    padding: 19px 0;
+    margin: 0;
+
+
+}
+
+.form-group{color: #fff;
+    margin-top: 23px;
+    font-size: 21px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    input,textarea{
+        background-color: transparent;
+        padding: 7px 20px;
+        color: #ddd;
+    }
+}
+
+@media (min-width: 1400px) {
+    .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+        max-width: 1000px;
+    }
+}

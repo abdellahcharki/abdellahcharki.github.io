@@ -111,7 +111,6 @@ body {
   background-image: radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
   background-size: 40px 40px;
   background-repeat: repeat;
-  box-shadow: 0px 0px 11px 2px #00000040;
 }
 .navbar .navbar-brand {
   color: #ffb324;
@@ -121,7 +120,6 @@ body {
   font-style: italic;
   position: relative;
   font-size: 23px;
-  margin-left: 10px;
 }
 .navbar .navbar-brand .lastname {
   color: #626475;
@@ -169,6 +167,7 @@ body {
   padding: 5px 20px;
   box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.14);
   border-radius: 33px;
+  margin-right: 21px;
   display: inline-block;
   font-size: 17px;
   transition: all 0.5s;
@@ -507,6 +506,29 @@ section .contact-btn:hover {
 .mycard-list .mycard-item .mycard-body {
   padding-left: 34px;
   font-size: 16px;
+}
+
+#Skills .mycard-item {
+  position: relative;
+}
+#Skills .mycard-title {
+  position: absolute;
+  background: rgba(118, 119, 127, 0);
+  border-radius: 21px;
+  border: 2px solid #fff;
+  padding: 5px 28px;
+  font-size: 19px;
+  top: -35PX;
+  left: 0px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom: 0;
+  line-height: 26px;
+}
+#Skills .mycard-body {
+  background: rgba(0, 0, 0, 0.3490196078);
+  border: 3px solid #ffffff;
+  padding: 29px;
 }
 
 /*# sourceMappingURL=style.css.map */

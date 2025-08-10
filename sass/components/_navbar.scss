@@ -1,0 +1,41 @@
+.navbar {
+    background-color: #606273;
+    font-family: $font_mont;
+ 
+    background-image: radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+    background-size: 40px 40px;
+    background-repeat: repeat;
+    .navbar-brand {
+        color: $orang ;
+
+        text-align: center;
+        font-family: "Poppins";
+        font-weight: 600;
+        font-style: italic;
+        position: relative;
+        font-size: 23px;
+
+        .lastname {
+            color: #626475;
+            text-shadow: -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff, 1px 1px 0 #ffffff;
+        }
+
+        &::before {
+            content: "";
+            width: 37px;
+            height: 37px;
+            border-radius: 50%;
+            background-color: #282035;
+            position: absolute;
+            top: -1px;
+            left: -14px;
+            z-index: -1;
+        }
+    }
+
+    .nav-item {
+        .nav-link {
+            color: #ddd;
+        }
+    }
+}
