@@ -173,11 +173,10 @@ body {
 }
 .header .about-wrapper .my-name {
   font-weight: 900;
-  font-size: 54px;
   color: #ffb324 !important;
   text-align: center;
   font-family: "Poppins";
-  font-size: 94px;
+  font-size: 80px;
   line-height: 80%;
 }
 .header .about-wrapper .my-name.lastname {
@@ -204,6 +203,26 @@ body {
   font-size: 28px;
   display: block;
   color: #a79292;
+}
+.header .about-wrapper .intersse {
+  font-weight: 300;
+  margin: 0;
+  font-size: 17px;
+  text-align: start;
+  padding-left: 30px;
+  color: #cfb5b5;
+  font-style: italic;
+  font-family: "IBM Plex Sans", sans-serif;
+  position: relative;
+}
+.header .about-wrapper .intersse::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 1px;
+  width: 22px;
+  bottom: 13px;
+  background: #cfb5b5;
 }
 .header .about-wrapper .about {
   color: #f0eaea;

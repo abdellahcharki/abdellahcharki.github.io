@@ -38,11 +38,11 @@
 
         .my-name {
             font-weight: 900;
-            font-size: 54px;
+
             color: $orang !important;
             text-align: center;
             font-family: 'Poppins';
-            font-size: 94px;
+            font-size: 80px;
             line-height: 80%;
 
             &.lastname {
@@ -76,6 +76,28 @@
             }
         }
 
+        .intersse {
+            font-weight: 300;
+            margin: 0;
+            font-size: 17px;
+            text-align: start;
+            padding-left: 30px;
+            color: #cfb5b5;
+            font-style: italic;
+            font-family: $font_text;
+            position: relative;
+
+            &::after {
+                content: "";
+                position: absolute;
+                left: 0;
+                height: 1px;
+                width: 22px;
+                bottom: 13px;
+                background: #cfb5b5;
+            }
+        }
+
         .about {
             color: #f0eaea;
             text-align: start;
@@ -87,6 +109,7 @@
 
         .links {
             text-align: start;
+
             .nav-link {
                 display: inline-block;
                 font-size: 23px;
