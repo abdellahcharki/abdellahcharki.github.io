@@ -210,6 +210,8 @@ body {
   text-align: start;
   font-size: 17px;
   margin: 15px 0;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 300;
 }
 .header .about-wrapper .links {
   text-align: start;
