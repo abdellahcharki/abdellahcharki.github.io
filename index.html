@@ -15,8 +15,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
         rel="stylesheet">
- 
-     
+
+
     <link
         href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
         rel="stylesheet">
@@ -29,7 +29,7 @@
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-        <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
 
 </head>
 
@@ -473,20 +473,29 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
         var swiper = new Swiper(".swiper", {
-           // Gap between slides
-            loop: true,             // Infinite loop
-            speed: 3000,            // Speed of the scroll (ms)
+            loop: true,                 // infinite
+            speed: 8000,                // slow & smooth glide (higher = slower motion)
             autoplay: {
-                delay: 0,             // No pause, continuous
+                delay: 0,                 // continuous, no pause
                 disableOnInteraction: false
             },
+            freeMode: true,             // removes snap feeling
+            freeModeMomentum: false,
+            allowTouchMove: true,       // users can still swipe; autoplay resumes
+            grabCursor: true,
+            // base (mobile-first)
+            slidesPerView: 3,
+            spaceBetween: 10,
+            // responsive breakpoints
             breakpoints: {
                 480: { slidesPerView: 4, spaceBetween: 14 },
                 640: { slidesPerView: 5, spaceBetween: 16 },
-                768: { slidesPerView:6, spaceBetween: 18 },
+                768: { slidesPerView: 6, spaceBetween: 18 },
                 1024: { slidesPerView: 7, spaceBetween: 20 },
                 1280: { slidesPerView: 8, spaceBetween: 24 }
             },
+            // helps avoid gaps when looping a small number of slides
+            loopAdditionalSlides: 10
         });
     </script>
 </body>
