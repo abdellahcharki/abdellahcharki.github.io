@@ -590,5 +590,8 @@ section .contact-btn:hover {
 .techlist .techitem .techlogo img {
   width: 70px;
 }
+.techlist .techitem .techlabel {
+  font-size: 16px;
+}
 
 /*# sourceMappingURL=style.css.map */
