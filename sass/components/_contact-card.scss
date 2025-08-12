@@ -38,12 +38,13 @@
 
         //font-family: $font_text;
         .mycard-title {
-            font-size: 22px;
+            font-size: 20px;
             display: inline-block;
 
             font-family: $font_text;
             i {
                 font-size: 21px;
+                margin-right: 10px;
             }
 
             a {
