@@ -38,9 +38,10 @@
 
         //font-family: $font_text;
         .mycard-title {
-            font-size: 23px;
+            font-size: 22px;
             display: inline-block;
 
+            font-family: $font_text;
             i {
                 font-size: 21px;
             }
@@ -64,6 +65,8 @@
         .mycard-body {
             padding-left: 34px;
             font-size: 16px;
+            font-family: $font_text;
+            font-weight: 300;
         }
     }
 
@@ -72,22 +75,20 @@
 
 #Skills{
     .mycard-item{
-           background: #1f2133;
+background: #1f213300;
     padding-top: 33px;
-    border: 1px solid #9d9191;
-    border-top-right-radius: 41px;
-    border-bottom-left-radius: 41px;
-    
-            font-family: 'Poppins';
-            font-weight: 200;
+    border: 1px solid #5d5e73;
+      font-family: $font_text;
     }
     .mycard-title{ 
     background: rgba(118, 119, 127, 0);
     font-size: 19px;
     margin-bottom: 20px;
+   
     }
     .mycard-body{
-       
+                
+            font-weight: 300;
  
     
     }

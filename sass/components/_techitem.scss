@@ -1,0 +1,16 @@
+.techlist {
+    margin-top: 30px;
+    .techitem {
+        text-align: center;
+
+        .techlogo {
+            margin-bottom: 3px;
+            height: 80px;
+            img {
+                width: 70px;
+            }
+        }
+
+        .techlabel {}
+    }
+}

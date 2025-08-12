@@ -160,7 +160,7 @@ body {
   border-radius: 13px;
 }
 .header .about-wrapper {
-  padding-top: 93px;
+  padding: 93px 2rem 0;
 }
 .header .about-wrapper p.iam {
   text-align: start;
@@ -205,21 +205,31 @@ body {
   display: block;
   color: #a79292;
 }
-.header .about-wrapper .nav-link {
-  background: #515972;
-  padding: 5px 20px;
-  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.14);
-  border-radius: 33px;
-  margin-right: 21px;
-  display: inline-block;
+.header .about-wrapper .about {
+  color: #f0eaea;
+  text-align: start;
   font-size: 17px;
-  transition: all 0.5s;
-  line-height: 30px;
+  margin: 15px 0;
 }
-.header .about-wrapper .nav-link:hover {
-  background: #ffb324;
-  box-shadow: none;
-  color: #000;
+.header .about-wrapper .links {
+  text-align: start;
+}
+.header .about-wrapper .links .nav-link {
+  display: inline-block;
+  font-size: 23px;
+  margin-right: 14px;
+  width: 32px;
+  line-height: 35px;
+  height: 32px;
+}
+.header .about-wrapper .links .nav-link.github:hover {
+  color: #1F2328;
+}
+.header .about-wrapper .links .nav-link.email:hover {
+  color: #4FAAFF;
+}
+.header .about-wrapper .links .nav-link.linkedin:hover {
+  color: #0A66C2;
 }
 
 .section-title {
@@ -261,11 +271,6 @@ section {
   padding: 25px 0;
   font-size: 20px;
 }
-section p.about {
-  font-size: 26px;
-  color: #b2c4d3;
-  line-height: 1.5;
-}
 section .contact-btn {
   background: #664b8b;
   padding: 15px 30px;
@@ -283,28 +288,6 @@ section .contact-btn:hover {
   border: none;
   background-color: transparent !important;
   color: #fff;
-}
-
-.tech {
-  color: #b7b7b7;
-  margin-right: 20px;
-  position: relative;
-  padding: 2px 0px;
-  line-height: 1px;
-  font-size: 15px;
-}
-.tech:last-of-type::after {
-  content: unset;
-}
-.tech::after {
-  content: "";
-  width: 5px;
-  height: 5px;
-  background: #bdb7c5;
-  right: -13px;
-  position: absolute;
-  border-radius: 10px;
-  bottom: 6px;
 }
 
 .skill-card {
@@ -528,8 +511,9 @@ section .contact-btn:hover {
   margin-top: 20px;
 }
 .mycard-list .mycard-item .mycard-title {
-  font-size: 23px;
+  font-size: 22px;
   display: inline-block;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 .mycard-list .mycard-item .mycard-title i {
   font-size: 21px;
@@ -549,21 +533,59 @@ section .contact-btn:hover {
 .mycard-list .mycard-item .mycard-body {
   padding-left: 34px;
   font-size: 16px;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 300;
 }
 
 #Skills .mycard-item {
-  background: #1f2133;
+  background: rgba(31, 33, 51, 0);
   padding-top: 33px;
-  border: 1px solid #9d9191;
-  border-top-right-radius: 41px;
-  border-bottom-left-radius: 41px;
-  font-family: "Poppins";
-  font-weight: 200;
+  border: 1px solid #5d5e73;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 #Skills .mycard-title {
   background: rgba(118, 119, 127, 0);
   font-size: 19px;
   margin-bottom: 20px;
+}
+#Skills .mycard-body {
+  font-weight: 300;
+}
+
+.tech {
+  color: #b7b7b7;
+  margin-right: 20px;
+  position: relative;
+  padding: 2px 0px;
+  line-height: 1px;
+  font-size: 15px;
+}
+.tech:last-of-type::after {
+  content: unset;
+}
+.tech::after {
+  content: "";
+  width: 5px;
+  height: 5px;
+  background: #bdb7c5;
+  right: -13px;
+  position: absolute;
+  border-radius: 10px;
+  bottom: 6px;
+}
+
+.techlist {
+  margin-top: 30px;
+}
+.techlist .techitem {
+  text-align: center;
+}
+.techlist .techitem .techlogo {
+  margin-bottom: 3px;
+  height: 80px;
+}
+.techlist .techitem .techlogo img {
+  width: 70px;
 }
 
 /*# sourceMappingURL=style.css.map */

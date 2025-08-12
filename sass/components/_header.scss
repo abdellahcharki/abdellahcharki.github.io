@@ -24,7 +24,7 @@
 
 
     .about-wrapper {
-        padding-top: 93px;
+        padding: 93px 2rem 0;
 
         p.iam {
             text-align: start;
@@ -64,7 +64,7 @@
                     font-size: inherit;
                     font-weight: inherit;
                     color: #525367 !important;
-                     text-shadow: -1px -1px 0 #ffb324, 1px -1px 0 #ffb324, -1px 1px 0 #ffb324, 1px 1px 0 #ffb324;
+                    text-shadow: -1px -1px 0 #ffb324, 1px -1px 0 #ffb324, -1px 1px 0 #ffb324, 1px 1px 0 #ffb324;
                 }
             }
 
@@ -76,25 +76,38 @@
             }
         }
 
-
-
-        .nav-link {
-            background: #515972;
-            padding: 5px 20px;
-            box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.14);
-            border-radius: 33px;
-            margin-right: 21px;
-            display: inline-block;
+        .about {
+            color: #f0eaea;
+            text-align: start;
             font-size: 17px;
-            transition: all 0.5s;
-            line-height: 30px;
+            margin: 15px 0;
+        }
 
-            &:hover {
-                background: $orang;
-                box-shadow: none;
-                color: #000
+        .links {
+            text-align: start;
+            .nav-link {
+                display: inline-block;
+                font-size: 23px;
+                margin-right: 14px;
+                width: 32px;
+                line-height: 35px;
+                height: 32px;
+
+
+                &.github:hover {
+                    color: #1F2328;
+                }
+
+                &.email:hover {
+                    color: #4FAAFF;
+                }
+
+                &.linkedin:hover {
+                    color: #0A66C2;
+                }
+
+
             }
-
         }
     }
 }

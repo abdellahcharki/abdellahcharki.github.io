@@ -40,12 +40,7 @@ section {
     padding: 25px 0;
     font-size: 20px;
 
-    p.about {
-        font-size: 26px;
-        color: #b2c4d3;
-        line-height: 1.5;
-    }
-
+ 
     .contact-btn {
         background: #664b8b;
         padding: 15px 30px;
@@ -72,28 +67,3 @@ section {
 
 
 
-
-.tech {
-    color: #b7b7b7;
-    margin-right: 20px;
-    position: relative;
-    padding: 2px 0px;
- 
-    line-height: 1px;
-    font-size: 15px;
-
-    &:last-of-type::after {
-        content: unset;
-    }
-
-    &::after {
-    content: "";
-    width: 5px;
-    height: 5px;
-    background: #bdb7c5;
-    right: -13px;
-    position: absolute;
-    border-radius: 10px;
-    bottom: 6px;
-    }
-}
